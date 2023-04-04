@@ -6,47 +6,82 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
         <title>About me</title>
     </head>
     <body>
         <header>
-            <h1>Hola, mi nombre es Carlos Eduardo Montalvo Rodriguez y tengo 34 años</h1>
+            <section id="fondo_cabecera">
+                    <h1>Edu Montalvo</h1>
+                    <ul>
+                        <a href="#aboutme">About me</a>
+                        <a href="#hobbies">Hobbies</a>
+                        <a href="#contactame">Contactame</a>
+                    </ul>
+            </section>
         </header>
         <main>
-            <h2>Mis Hobbies</h2>
-            <p>
-                Soy egresado de la carrera de redes y comunicaciones, me gusta investigar mucho sobre algunas cosas que me llaman la atención, por esa parte creo que me consideraría autodidacta en algunas cosas. Mis hobbies son: escuchar música, leer de tecnología, jugar video juegos online y también offline, salir al cine, actualmente estoy enfocado al bootcamp por lo que no me encuentro laborando.
-            </p>
-            <picture>
+            <section id="aboutme">
+                <h2>About me</h2>
+                <p>
+                    Hola, mi nombre es Carlos Eduardo Montalvo Rodriguez y tengo 34 años ,soy egresado de la carrera de redes y comunicaciones, me gusta investigar mucho sobre algunas cosas que me llaman la atención, por esa parte creo que me consideraría autodidacta en algunas cosas.
+                </p>
+            </section>
+            <section id="hobbies">
+                <h2>Mis Hobbies</h2>
+                <p>
+                    Mis hobbies son: escuchar música, leer de tecnología, jugar video juegos online y también offline, salir al cine, actualmente estoy enfocado al bootcamp por lo que no me encuentro laborando.
+                </p>
+                <div class="bloque_img">
+                    <img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg" alt="Escuchar Musica">
+                    <img src="https://images.pexels.com/photos/7046989/pexels-photo-7046989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Video Juegos">
+                    <img src="https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img src="https://images.pexels.com/photos/132700/pexels-photo-132700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+            </section>
+            <!-- <picture>
                 <legend>Ciudad de Noche</legend>
                 <img src="https://images.pexels.com/photos/2341282/pexels-photo-2341282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ciudad de noche" width="50%">
-            </picture>
-            <section>
+            </picture> -->
+            <section id="juegos">
                 <h3>Lista de Video Juegos Favoritos</h3>
-                <ul>
-                    <li>Shadows Of The Colossus</li>
-                    <li>GTA V Role Play</li>
-                    <li>Dota2</li>
-                </ul>
+                <div class="bloque_juegos">
+                    <div>
+                        <img src="https://www.nerdevil.it/wp-content/uploads/2018/02/shadow-of-the-colossus-remake-screen3.jpg" alt="Shadow Of The Colossus">
+                        <p>Shadows Of The Colossus</p>
+                    </div>
+                    <div>
+                        <img src="https://www.nfscars.net/media/showroom/rides/images/2016/05/16/f31082c4-cb9c-4e4e-98e6-2fa9b5048395.jpg" alt="NFSC">
+                        <p>Need for Speed</p>
+                    </div>
+                    <div>
+                        <img src="https://th.bing.com/th/id/R.76a44c9ed69cf1dc71a6098c30ca267a?rik=30LHhHuFsnF27w&pid=ImgRaw&r=0" alt="Dota2">
+                        <p>Dota2</p>
+                    </div>
+                </div>
             </section>
-            <section>
+            <section id="contactame" class="section_formulario">
                 <form action="">
-                    <fieldset>
-                        <h2>Contactarme</h2>
-                        <label for="nombre">Nombres</label>
-                        <input type="text" name="" id="nombre" placeholder="info-Contacto">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" name="" id="apellidos">
-                        <button type="submit">Submit</button>
+                    <h2>Contactarme</h2>
+                    <fieldset class="formulario">
+                        <div class="contactame_datos">
+                            <label for="nombre">Nombres</label>
+                            <input type="text" name="" id="nombre" placeholder="info-Contacto">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="" id="apellidos" placeholder="Apellidos">
+                        </div>
+                        <div class="contactame_comentarios">
+                            <label for="comentarios">Comentarios</label>
+                            <textarea name="comentarios" id="comentarios" cols="56" rows="1" placeholder="Comentarios"></textarea>
+                        </div>
+                        <button class="btn_submit" type="submit">Submit</button>
                     </fieldset>
                 </form>
             </section>
-            <section>
-                <label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="comentarios" cols="4" rows="4" placeholder="Comentarios"></textarea>
-            </section>
         </main>
-        <footer>
+        <footer class="footer">
             <p>No Copyright <a href="https://codigo.edu.pe/">CodiGo</a></p>
         </footer>
     </body>
